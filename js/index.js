@@ -61,29 +61,58 @@ sixthLink.textContent = siteContent["nav"]["nav-item-6"]
 //end navigation
 
 //cta start
-var ctah1 = document.querySelector('section.cta > div')
-
-ctah1.textContent = siteContent["cta"]["h1"]
+var ctaH1 = document.querySelector('section.cta > div > h1')
+var ctaBtn = document.querySelector('section.cta > div > button')
+ctaH1.textContent = siteContent["cta"]["h1"]
+ctaBtn.textContent = siteContent["cta"]["button"]
 
 //end cta
 
 //main content start
 
 var feature = document.querySelector('div.top-content > div:nth-child(1) > h4')
+var featureTxt = document.querySelector('div.top-content > div:nth-child(1) > p')
 var about = document.querySelector('div.top-content > div:nth-child(2) > h4')
+var aboutTxt = document.querySelector('div.top-content > div:nth-child(2) > p')
 var service = document.querySelector('div.bottom-content > div:nth-child(1) > h4')
+var serviceTxt = document.querySelector('div.bottom-content > div:nth-child(1) > p')
 var product = document.querySelector('div.bottom-content > div:nth-child(2) > h4')
+var productTxt = document.querySelector('div.bottom-content > div:nth-child(2) > p')
 var vision = document.querySelector('div.bottom-content > div:nth-child(3) > h4')
+var visionTxt = document.querySelector('div.bottom-content > div:nth-child(3) > p')
 
 feature.textContent = siteContent["main-content"]["features-h4"];
+featureTxt.textContent = siteContent["main-content"]["features-content"];
 about.textContent = siteContent["main-content"]["about-h4"];
+aboutTxt.textContent = siteContent["main-content"]["about-content"];
 service.textContent = siteContent["main-content"]["services-h4"];
+serviceTxt.textContent = siteContent["main-content"]["services-content"];
 product.textContent = siteContent["main-content"]["product-h4"];
+productTxt.textContent = siteContent["main-content"]["product-content"];
 vision.textContent = siteContent["main-content"]["vision-h4"];
+visionTxt.textContent = siteContent["main-content"]["vision-content"];
 
 
 //end main content
 
+//contact section start
+
+var contactH4 = document.querySelector('section.contact > h4');
+var contactAddress = document.querySelector('section.contact > p:nth-child(2)');
+var contactNumber = document.querySelector('section.contact > p:nth-child(3)');
+var contactEmail = document.querySelector('section.contact > p:nth-child(4)');
+
+contactH4.textContent = siteContent["contact"]["contact-h4"];
+contactAddress.textContent = siteContent["contact"]["address"];
+contactNumber.textContent = siteContent["contact"]["phone"];
+contactEmail.textContent = siteContent["contact"]["email"];
+
+//contact section end
+
 //footer start
+
+var footer = document.querySelector('footer > p');
+
+footer.textContent = siteContent["footer"]["copyright"];
 
 //end footer

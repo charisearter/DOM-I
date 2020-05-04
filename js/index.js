@@ -66,6 +66,9 @@ var ctaBtn = document.querySelector('section.cta > div > button')
 ctaH1.textContent = siteContent["cta"]["h1"]
 ctaBtn.textContent = siteContent["cta"]["button"]
 
+let ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
 //end cta
 
 //main content start
@@ -74,6 +77,8 @@ var feature = document.querySelector('div.top-content > div:nth-child(1) > h4')
 var featureTxt = document.querySelector('div.top-content > div:nth-child(1) > p')
 var about = document.querySelector('div.top-content > div:nth-child(2) > h4')
 var aboutTxt = document.querySelector('div.top-content > div:nth-child(2) > p')
+let midImg = document.getElementById("middle-img");
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 var service = document.querySelector('div.bottom-content > div:nth-child(1) > h4')
 var serviceTxt = document.querySelector('div.bottom-content > div:nth-child(1) > p')
 var product = document.querySelector('div.bottom-content > div:nth-child(2) > h4')

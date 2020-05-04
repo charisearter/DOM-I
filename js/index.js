@@ -48,9 +48,9 @@ var fourthLink = document.querySelector('nav > a:nth-child(4)')
 var fifthLink = document.querySelector('nav > a:nth-child(5)')
 var sixthLink = document.querySelector('nav > a:nth-child(6)')
 
-firstLink.textContent = 'foo'
-secondLink.textContent = 'foo 2'
-thirdLink.textContent = 'foo 3'
-fourthLink.textContent = 'foo 4'
-fifthLink.textContent = 'foo 5'
-sixthLink.textContent = 'foo 6'
+firstLink.textContent = siteContent["nav"]["nav-item-1"]
+secondLink.textContent = siteContent["nav"]["nav-item-2"]
+thirdLink.textContent = siteContent["nav"]["nav-item-3"]
+fourthLink.textContent = siteContent["nav"]["nav-item-4"]
+fifthLink.textContent = siteContent["nav"]["nav-item-5"]
+sixthLink.textContent = siteContent["nav"]["nav-item-6"]

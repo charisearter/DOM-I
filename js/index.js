@@ -41,6 +41,8 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+//navigation
+
 var firstLink = document.querySelector('nav > a:nth-child(1)')
 var secondLink = document.querySelector('nav > a:nth-child(2)')
 var thirdLink = document.querySelector('nav > a:nth-child(3)')
@@ -54,3 +56,34 @@ thirdLink.textContent = siteContent["nav"]["nav-item-3"]
 fourthLink.textContent = siteContent["nav"]["nav-item-4"]
 fifthLink.textContent = siteContent["nav"]["nav-item-5"]
 sixthLink.textContent = siteContent["nav"]["nav-item-6"]
+
+
+//end navigation
+
+//cta start
+var ctah1 = document.querySelector('section.cta > div')
+
+ctah1.textContent = siteContent["cta"]["h1"]
+
+//end cta
+
+//main content start
+
+var feature = document.querySelector('div.top-content > div:nth-child(1) > h4')
+var about = document.querySelector('div.top-content > div:nth-child(2) > h4')
+var service = document.querySelector('div.bottom-content > div:nth-child(1) > h4')
+var product = document.querySelector('div.bottom-content > div:nth-child(2) > h4')
+var vision = document.querySelector('div.bottom-content > div:nth-child(3) > h4')
+
+feature.textContent = siteContent["main-content"]["features-h4"];
+about.textContent = siteContent["main-content"]["about-h4"];
+service.textContent = siteContent["main-content"]["services-h4"];
+product.textContent = siteContent["main-content"]["product-h4"];
+vision.textContent = siteContent["main-content"]["vision-h4"];
+
+
+//end main content
+
+//footer start
+
+//end footer

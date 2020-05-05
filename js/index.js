@@ -43,6 +43,16 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //navigation
 
+//select all links in navigation
+let allNav = document.querySelectorAll('nav a');
+//change nav links color
+allNav.forEach((a) => {a.style.color = 'green';})
+
+//select all links in navigation
+let allH4 = document.querySelectorAll('h4');
+//change nav links color
+allH4.forEach((h4) => {h4.style.color = 'blue';})
+
 var firstLink = document.querySelector('nav > a:nth-child(1)')
 var secondLink = document.querySelector('nav > a:nth-child(2)')
 var thirdLink = document.querySelector('nav > a:nth-child(3)')
@@ -57,14 +67,38 @@ fourthLink.textContent = siteContent["nav"]["nav-item-4"]
 fifthLink.textContent = siteContent["nav"]["nav-item-5"]
 sixthLink.textContent = siteContent["nav"]["nav-item-6"]
 
+//targets all of nav
+let nav = document.querySelector('nav')
+
+//create new links
+let newLink = document.createElement('a');
+let otherLink = document.createElement('a');
+
+//link addresses
+newLink.href = "https://www.google.com/";
+otherLink.href="https://theoatmeal.com/"
+
+//give link text
+newLink.textContent = "Whatever";
+otherLink.textContent = "Sigh";
+
+//put at beginning of nav
+nav.prepend(newLink);
+
+//put at end of nav
+nav.appendChild(otherLink);
 
 //end navigation
 
 //cta start
 var ctaH1 = document.querySelector('section.cta > div > h1')
 var ctaBtn = document.querySelector('section.cta > div > button')
+
+
 ctaH1.textContent = siteContent["cta"]["h1"]
 ctaBtn.textContent = siteContent["cta"]["button"]
+
+//add cta image
 
 let ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
@@ -72,13 +106,17 @@ ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 //end cta
 
 //main content start
-
+//text above image
 var feature = document.querySelector('div.top-content > div:nth-child(1) > h4')
 var featureTxt = document.querySelector('div.top-content > div:nth-child(1) > p')
 var about = document.querySelector('div.top-content > div:nth-child(2) > h4')
 var aboutTxt = document.querySelector('div.top-content > div:nth-child(2) > p')
+
+//add middle image
 let midImg = document.getElementById("middle-img");
 midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+//add text on bottom of image
 var service = document.querySelector('div.bottom-content > div:nth-child(1) > h4')
 var serviceTxt = document.querySelector('div.bottom-content > div:nth-child(1) > p')
 var product = document.querySelector('div.bottom-content > div:nth-child(2) > h4')

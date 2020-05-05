@@ -48,10 +48,13 @@ let allNav = document.querySelectorAll('nav a');
 //change nav links color
 allNav.forEach((a) => {a.style.color = 'green';})
 
+//Stretch
 //select all links in navigation
 let allH4 = document.querySelectorAll('h4');
 //change nav links color
-allH4.forEach((h4) => {h4.style.color = 'blue';})
+allH4.forEach((h4) => {h4.style.color = 'green';})
+
+
 
 var firstLink = document.querySelector('nav > a:nth-child(1)')
 var secondLink = document.querySelector('nav > a:nth-child(2)')
@@ -74,13 +77,18 @@ let nav = document.querySelector('nav')
 let newLink = document.createElement('a');
 let otherLink = document.createElement('a');
 
+
 //link addresses
 newLink.href = "https://www.google.com/";
 otherLink.href="https://theoatmeal.com/"
 
+//color green
+newLink.style.color = "green";
+otherLink.style.color="green";
+
 //give link text
 newLink.textContent = "Whatever";
-otherLink.textContent = "Sigh";
+otherLink.textContent = "...Sigh";
 
 //put at beginning of nav
 nav.prepend(newLink);
@@ -97,6 +105,12 @@ var ctaBtn = document.querySelector('section.cta > div > button')
 
 ctaH1.textContent = siteContent["cta"]["h1"]
 ctaBtn.textContent = siteContent["cta"]["button"]
+
+//STRETCH messing around with button style and color
+ctaBtn.style.borderColor = "green";
+ctaBtn.style.borderWidth = "4px";
+ctaBtn.style.borderStyle = "dotted";
+
 
 //add cta image
 
